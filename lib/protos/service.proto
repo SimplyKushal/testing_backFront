@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service PredictionService {
+  rpc SendImage (ImageRequest) returns (ImageResponse);
+}
+
+message ImageRequest {
+  bytes imageData = 1;
+}
+
+message ImageResponse {
+  string message = 1;
+}

@@ -1,0 +1,24 @@
+name: testing
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.1.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  grpc: ^4.0.1
+  flutter_webrtc: ^0.12.7
+  http: ^1.3.0
+  protobuf: ^3.1.0  # Better to pin a version for stability; "any" can lead to incompatibilities
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
